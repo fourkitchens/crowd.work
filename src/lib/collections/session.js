@@ -1,7 +1,11 @@
-// Declare 'Sessions' collection.
+/**
+ * @file
+ * Defines 'Sessions' collection.
+ */
+
 Sessions = new Mongo.Collection('sessions');
 
-// Define schema for Examples collection.
+// Define schema for Sessions collection.
 Sessions.attachSchema({
   title: {
     type: String,
@@ -12,5 +16,9 @@ Sessions.attachSchema({
     type: String,
     label: 'Machine Name',
     max: 200
+  },
+  phase: {
+    type: Number,
+    label: 'Phase number'
   }
 });
