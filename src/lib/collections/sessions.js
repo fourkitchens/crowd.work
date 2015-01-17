@@ -2,6 +2,7 @@
  * @file
  * Defines 'Sessions' collection.
  */
+/* globals Sessions Mongo */
 
 Sessions = new Mongo.Collection('sessions');
 

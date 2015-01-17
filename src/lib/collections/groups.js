@@ -2,6 +2,7 @@
  * @file
  * Defines 'Groups' collection.
  */
+/* globals Groups Mongo */
 
 Groups = new Mongo.Collection('groups');
 

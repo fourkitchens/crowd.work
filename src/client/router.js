@@ -1,3 +1,9 @@
+/**
+ * @file
+ * Contains global router configurations.
+ */
+/* globals Router Meteor */
+
 // Define main layout page.
 Router.configure({
   layoutTemplate: 'layoutMain'

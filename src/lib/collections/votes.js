@@ -2,6 +2,7 @@
  * @file
  * Defines 'Votes' collection.
  */
+/* globals Votes Mongo */
 
 Votes = new Mongo.Collection('votes');
 

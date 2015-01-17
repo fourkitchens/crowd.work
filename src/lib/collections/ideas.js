@@ -2,6 +2,7 @@
  * @file
  * Defines 'Ideas' collection.
  */
+/* globals Ideas Mongo */
 
 Ideas = new Mongo.Collection('ideas');
 
