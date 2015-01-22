@@ -1,2 +1,2 @@
 #Server Modules
-This is were server-side code for modules will be placed.
+This is where server-side code for modules will be placed.
