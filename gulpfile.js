@@ -33,8 +33,7 @@ gulp.task('lintjson', function () {
 
 /**
  * @task JavaScript lint.
- *   Runs JSCS and JSLint on module, theme, and gulp files. Excludes all
- *   minified JavaScript files.
+ *   Runs JSCS and JSLint on server, client, lib, and gulp files.
  */
 gulp.task('lintjs', function () {
   return gulp.src([
