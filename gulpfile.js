@@ -46,3 +46,21 @@ gulp.task('lintjs', function () {
   .pipe(jshint.reporter('default'))
   .pipe(jscs());
 });
+
+/**
+ * @task JavaScript/JSON watch.
+ *   Watches changes on relevant js and json files and reports accordingly.
+ */
+gulp.task('watch', function () {
+  gulp.watch([
+    'gulpfile.js',
+    'src/**/*.js',
+    '!src/.meteor/**/*.js',
+    '!src/packages/**/*.js'
+  ], ['lintjs']);
+
+  gulp.watch([
+    '.jscsrc',
+    '.jshintrc'
+  ], ['lintjson']);
+});

@@ -9,7 +9,6 @@ Router.configure({
   layoutTemplate: 'layoutMain'
 });
 
-
 // If a user has no session, then direct them to the start page.
 Router.before(function () {
   if (!Meteor.userId()) {
