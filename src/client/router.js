@@ -2,7 +2,7 @@
  * @file
  * Contains global router configurations.
  */
-/* globals Router Meteor */
+/* globals Router, Meteor */
 
 // Define main layout page.
 Router.configure({
@@ -16,7 +16,7 @@ Router.before(function () {
     this.redirect('start');
     this.stop();
   }
-}, { except: ['start'] });
+}, {except: ['start']});
 
 // Define a main route that directs to another accordingly.
 Router.route('/', {
