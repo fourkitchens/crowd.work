@@ -15,9 +15,9 @@ var gulp = require('gulp'),
  */
 gulp.task('cs', function () {
   return gulp.src([
-    'src/*.js',
     'src/**/*.js',
     '!src/.meteor/**/*.js',
+    '!src/packages/*/**.js',
     'gulpfile.js'
   ])
   .pipe(jshint())
