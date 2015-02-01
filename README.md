@@ -14,10 +14,13 @@ Team discussion organization tool, built on Meteor.
 * When Meteor has finished initializing itself, open `http://localhost:3000` in your browser. Of course, you can put it on any port you would like, but by default Meteor takes over port 3000.
 
 ## Coding Standards
-This project contains a tool that enforces coding standards. Before code is merged into the project, it must meet these standards, which are defined in the `.jscsrc` and `.jshintrc` files in the project root. 
+This project contains multiple tools for enforcing coding standards and checking for errors within the codebase. Before code is merged into the project, it must meet the standards defined in the `.jscsrc` and `.jshintrc` files in the project root. An [EditorConfig](http://editorconfig.org/) file is provided for convenience.
 
-To run the coding standards sniffer, you need to do the following:
+### Installation
 
-* Run `npm install` from the project's root directory (not Meteor's directory). This will install the node modules needed to run gulp, gulp-jscs, and gulp-jshint.
-* When you want to scan the codebase for errors, run `gulp cs` from a console in the project root. An error report will then be generated in your console. You should fix the errors, and re-run the sniffer until no errors are reported.
+* Change directory to the crowd.work directory, like: `cd /path/to/crowd.work`
+* Run `npm install` to retrieve dependencies.
 
+### Checking
+
+To check your local codebase, run `gulp cs` from a console in the project root. An error report, if any, will be generated in the console. If errors are reported, they should be fixed and the Coding Standards checks should be executed until all errors are eliminated.
