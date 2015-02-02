@@ -64,3 +64,6 @@ gulp.task('watch', function () {
     '.jshintrc'
   ], ['lintjson']);
 });
+
+// Default: Watch
+gulp.task('default', ['watch']);
