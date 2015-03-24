@@ -1,9 +1,6 @@
 <template name="layoutMain">
-  <core-drawer-panel id="main" drawerwidth="320px">
-    {{> header}}
-
-    <section class="container" id="main">
-      {{> yield}}
-    </section>
-  </core-drawer-panel>
+  {{> header}}
+  <section class="container" id="main">
+    {{> yield}}
+  </section>
 </template>
