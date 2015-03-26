@@ -40,7 +40,8 @@ gulp.task('lintjs', function () {
     'gulpfile.js',
     'src/**/*.js',
     '!src/.meteor/**/*.js',
-    '!src/packages/**/*.js'
+    '!src/packages/**/*.js',
+    '!src/public/bower_components/**/*.js'
   ])
   .pipe(jshint())
   .pipe(jshint.reporter('default'))
